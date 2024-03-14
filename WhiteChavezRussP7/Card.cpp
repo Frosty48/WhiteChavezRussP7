@@ -5,7 +5,7 @@ Card::Card(int n)
     iValue = n % 13 + 1;//n remainder 13 plus 
     int iSuit = n / 13;
 
-    //Maks
+ 
     switch (iSuit) {
     case 0:
         suit = "S"; // Spades
@@ -21,7 +21,7 @@ Card::Card(int n)
         break;
     }
 
-    switch (iValue) {
+    switch (iValue) {//could use if statements just incase the switch doesn't work
     case 1:
         value = "Ace";
         break;
@@ -35,7 +35,7 @@ Card::Card(int n)
         value = "King";
         break;
     default:
-        value = std::to_string(iValue);
+        value = to_string(iValue);
         break;
     }
 }
@@ -47,7 +47,7 @@ void Card::SetIValue(int val)
 
 string Card::GetValue()
 {
-	return value;
+	return value;//Returns the value given in the Card(){};
 }
 
 int Card::GetIValue()
