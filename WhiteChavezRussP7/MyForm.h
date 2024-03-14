@@ -208,7 +208,7 @@ namespace WhiteChavezRussP7 {
 			this->Controls->Add(this->lblPlayersHand);
 			this->Controls->Add(this->lblHeader);
 			this->Name = L"MyForm";
-			this->Text = L"WhiteChavezRuss Black  Jacke Game";
+			this->Text = L"WhiteChavezRuss Black  Jack Game";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
