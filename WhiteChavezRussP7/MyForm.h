@@ -1,5 +1,8 @@
 #pragma once
-
+#include <msclr\marshal_cppstd.h> 
+#include "Card.h"
+#include "Deck.h"
+#include "Hand.h"
 namespace WhiteChavezRussP7 {
 
 	using namespace System;
@@ -132,6 +135,7 @@ namespace WhiteChavezRussP7 {
 			this->btnBet->TabIndex = 4;
 			this->btnBet->Text = L"Bet";
 			this->btnBet->UseVisualStyleBackColor = true;
+			this->btnBet->Click += gcnew System::EventHandler(this, &MyForm::btnBet_Click);
 			// 
 			// btnPlayAgain
 			// 
@@ -143,6 +147,7 @@ namespace WhiteChavezRussP7 {
 			this->btnPlayAgain->TabIndex = 5;
 			this->btnPlayAgain->Text = L"Play Again";
 			this->btnPlayAgain->UseVisualStyleBackColor = true;
+			this->btnPlayAgain->Click += gcnew System::EventHandler(this, &MyForm::btnPlayAgain_Click);
 			// 
 			// txbBet
 			// 
@@ -214,5 +219,9 @@ namespace WhiteChavezRussP7 {
 
 		}
 #pragma endregion
-	};
+	private: System::Void btnBet_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+private: System::Void btnPlayAgain_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+};
 }
